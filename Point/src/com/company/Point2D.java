@@ -1,8 +1,8 @@
 package com.company;
 
 public class Point2D {
-    private float x;
-    private float y;
+    protected float x;
+    protected float y;
 
     public Point2D() {
     }
