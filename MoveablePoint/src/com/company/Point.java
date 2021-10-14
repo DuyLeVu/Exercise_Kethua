@@ -1,15 +1,15 @@
 package com.company;
 
-public class Point2D {
-    private float x;
-    private float y;
+public class Point {
+    private  float x;
+    private  float y;
 
-    public Point2D() {
-    }
-
-    public Point2D(float x, float y) {
+    public Point(float x, float y) {
         this.x = x;
         this.y = y;
+    }
+
+    public Point() {
     }
 
     public float getX() {
@@ -31,17 +31,15 @@ public class Point2D {
     public void setXY(float x, float y){
         this.x = x;
         this.y = y;
-        }
-
-        public  float[] getXY(){
-
-            return new float[]{this.x, this.y};
-        }
+    }
+    public float[] getXY(){
+        return new float[]{this.x,this.y};
+    }
 
     @Override
     public String toString() {
         return "(" + x +
-                "," + y +
+                ", " + y +
                 ')';
     }
 }
